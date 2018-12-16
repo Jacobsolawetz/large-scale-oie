@@ -1,0 +1,3 @@
+[console_scripts]
+jsondiff = jsondiff.cli:main
+
