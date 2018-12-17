@@ -1,1 +1,1 @@
-from my_library.models.academic_paper_classifier import AcademicPaperClassifier
+from large_scale_oie.models.oie_model import OieLabeler

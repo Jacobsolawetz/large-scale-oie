@@ -13,7 +13,7 @@ class TestOieDatasetReader(AllenNlpTestCase):
 
         reader = OieReader()
         #add test fixture here and test output
-        instances = reader.read('tests/fixtures/open_ie.gold_conll')
+        instances = reader.read('tests/fixtures')
 
 
 
