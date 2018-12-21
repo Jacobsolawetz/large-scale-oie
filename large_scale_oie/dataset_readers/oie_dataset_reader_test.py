@@ -28,6 +28,14 @@ class TestOieDatasetReader(AllenNlpTestCase):
         print([t.text for t in fields["tokens"].tokens])
         print([l for l in fields["tags"].labels])
 
+        fields = instances[3].fields
+        print([t.text for t in fields["tokens"].tokens])
+        print([l for l in fields["tags"].labels])
+
+        fields = instances[4].fields
+        print([t.text for t in fields["tokens"].tokens])
+        print([l for l in fields["tags"].labels])
+
 '''
         assert len(instances) == 10
         fields = instances[0].fields
