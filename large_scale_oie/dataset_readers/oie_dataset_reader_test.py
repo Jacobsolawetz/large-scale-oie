@@ -14,7 +14,7 @@ class TestOieDatasetReader(AllenNlpTestCase):
 
         reader = OieReader()
         #test data directory listed below. OieReader loops through the files therein and loads.
-        instances =  ensure_list(reader._read('oie_data'))
+        instances =  ensure_list(reader._read('onto_notes_conlls'))
         fields = instances[0].fields
         print([t.text for t in fields["tokens"].tokens])
         print([l for l in fields["tags"].labels])

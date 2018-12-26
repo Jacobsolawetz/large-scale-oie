@@ -1,0 +1,28 @@
+word_id word    pred    pred_id head_pred_id    sent_id run_id  label
+0       The     might barred    [9]     9       1       0       O
+1       effect  might barred    [9]     9       1       0       O
+2       is      might barred    [9]     9       1       0       O
+3       that    might barred    [9]     9       1       0       O
+4       lawsuits        might barred    [9]     9       1       0       A0-B
+5       that    might barred    [9]     9       1       0       O
+6       might   might barred    [9]     9       1       0       O
+7       have    might barred    [9]     9       1       0       O
+8       been    might barred    [9]     9       1       0       O
+9       barred  might barred    [9]     9       1       0       P-B
+10      because might barred    [9]     9       1       0       A1-B
+11      they    might barred    [9]     9       1       0       A1-I
+12      were    might barred    [9]     9       1       0       A1-I
+13      filed   might barred    [9]     9       1       0       A1-I
+14      too     might barred    [9]     9       1       0       A1-I
+15      late    might barred    [9]     9       1       0       A1-I
+16      could   might barred    [9]     9       1       0       A1-I
+17      proceed might barred    [9]     9       1       0       A1-I
+18      because might barred    [9]     9       1       0       A1-I
+19      of      might barred    [9]     9       1       0       A1-I
+20      the     might barred    [9]     9       1       0       A1-I
+21      one     might barred    [9]     9       1       0       A1-I
+22      -       might barred    [9]     9       1       0       A1-I
+23      year    might barred    [9]     9       1       0       A1-I
+24      extension       might barred    [9]     9       1       0       A1-I
+25      .       might barred    [9]     9       1       0       O
+
