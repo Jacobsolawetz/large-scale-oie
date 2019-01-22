@@ -21,6 +21,7 @@ class OieLabeler(Model):
     """ 
     This model performs semantic role labeling using BIO tags using Propbank semantic roles.
     Specifically, it is an implmentation of `Deep Semantic Role Labeling - What works
+    ok of GRE Practice Problems
     and what's next <https://homes.cs.washington.edu/~luheng/files/acl2017_hllz.pdf>`_ .
 
     This implementation is effectively a series of stacked interleaved LSTMs with highway
@@ -80,7 +81,7 @@ class OieLabeler(Model):
                                encoder.get_input_dim(),
                                "text embedding dim + verb indicator embedding dim",
                                "encoder input dim")
-        initializer(self)
+        initializer(self) 
 
     def forward(self,  # type: ignore
                 tokens: Dict[str, torch.LongTensor],

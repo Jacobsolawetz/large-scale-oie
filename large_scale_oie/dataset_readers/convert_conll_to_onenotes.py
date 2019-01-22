@@ -94,7 +94,7 @@ def convert_tags(tags):
     return onto_tags 
 
 if __name__ == "__main__":
-    print('coversion_started')
+    print('conversion_started')
     parser = argparse.ArgumentParser(description="Convert Open IE4 extractions to CoNLL (ontonotes) format.")
     parser.add_argument("--inp", type=str, help="input file from which to read Open IE extractions.", required = True)
     parser.add_argument("--domain", type=str, help="domain to use when writing the ontonotes file.", required = True)
