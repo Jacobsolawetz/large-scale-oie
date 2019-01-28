@@ -1,1 +1,1 @@
-#from my_library.predictors.paper_classifier_predictor import PaperClassifierPredictor
+from large_scale_oie.predictors.oie_predictor import OpenIePredictor
