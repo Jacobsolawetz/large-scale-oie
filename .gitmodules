@@ -1,0 +1,4 @@
+[submodule "oie-benchmark"]
+	path = oie-benchmark
+	url = https://github.com/Jacobsolawetz/oie-benchmark.git
+	branch = python3
