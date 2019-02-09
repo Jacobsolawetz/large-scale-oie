@@ -222,6 +222,8 @@ class OpenIePredictor(Predictor):
                      for pred_id in pred_ids]
 
         # Run model
+        for instance in instances:
+            print(self._model.forward_on_instance(instance))
         outputs = [[sanitize_label(label) for label in self._model.forward_on_instance(instance)["tags"]]
                    for instance in instances]
 

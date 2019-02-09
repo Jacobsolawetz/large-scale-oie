@@ -30,6 +30,6 @@ if __name__ == "__main__":
         for sent in sents:
              inp = json.loads(sent)
              result = predictor.predict_json(inp)
-             probs = result['class_probabilities']
-             
+             #probs = result['class_probabilities']
+             #print(result)
 
