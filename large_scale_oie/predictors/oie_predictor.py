@@ -222,8 +222,9 @@ class OpenIePredictor(Predictor):
                      for pred_id in pred_ids]
 
         # Run model
+        model_result = []
         for instance in instances:
-            print(self._model.forward_on_instance(instance))
+            model_result.append(self._model.forward_on_instance(instance))
         outputs = [[sanitize_label(label) for label in self._model.forward_on_instance(instance)["tags"]]
                    for instance in instances]
 
@@ -246,6 +247,6 @@ class OpenIePredictor(Predictor):
                     "description": description,
                     "tags": tags,
             })
-
-        return sanitize(results)
+        return model_result
+        #return sanitize(results)
 
