@@ -257,12 +257,6 @@ if __name__ == "__main__":
         with open(output_fn, 'w') as fout:
             fout.write('\n\n'.join([oie.conll_with_prob(sent.strip())
                                     for sent in sents]))
-    for sent in sents:
-        print(sent)
-        #print(sent.strip())
-        for ex in oie.parse_sent(sent.strip()):
-            print('hello')
-            print (str(ex))
     else:
         print("writing")
         with open(output_fn, 'w') as fout:

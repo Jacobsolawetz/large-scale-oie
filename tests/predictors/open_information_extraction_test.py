@@ -37,3 +37,6 @@ class TestOpenIePredictor(AllenNlpTestCase):
             assert len(tags) == num_words
 
 
+if __name__ == "__main__":
+    toie = TestOpenIePredictor()
+    toie.test_uses_named_inputs()

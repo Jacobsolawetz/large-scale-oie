@@ -45,10 +45,12 @@ if __name__ == "__main__":
     #define path to sentences to run the model over
     sentence_file = 'oie-benchmark/raw_sentences/all.txt'
     sentence_output = 'oie-benchmark/raw_sentences/test_sent.jsonl'
-    model_path = 'results/classic_fullrun/'
-    output_path = 'large_scale_oie/evaluation/ex4.conll'
+    model_path = 'results/classic_train/'
+    output_path = 'large_scale_oie/evaluation/classic_train.conll'
     #clear output file
-    os.remove(output_path)
+    if os.path.exists(output_path):
+        os.remove(output_path)
+
 
     with open(sentence_output, "w") as f:
         with open(sentence_file, "r") as sentences:
@@ -56,24 +58,29 @@ if __name__ == "__main__":
                 jsonl = '{' + '"' + 'sentence'  + '"'  + ' : ' + '"' +  sentence.replace('\n','') + '"' + '}'
                 f.write(jsonl)
                 f.write('\n')
-
+    print('sents staged')
 
     with open(model_path + 'vocabulary/labels.txt', "r") as vocab:
         for label in vocab:
             labels.append(label.rstrip())
 
-    archive = load_archive('results/classic_fullrun/model.tar.gz')
-
+    archive = load_archive(model_path + 'model.tar.gz')
+    
     predictor = Predictor.from_archive(archive, 'oie')
     #iterate through sentences
     instance_iterator = 0
+
     #sentences = 'tests/fixtures/oie_test.jsonl'
+    print('starting to predict on sents')
     with open(sentence_output, "r") as sents:
         with open(output_path, 'a') as f:
             for sent in sents:
                  inp = json.loads(sent)
                  #run model on sentence
+                 print('predicting...')
                  result = predictor.predict_json(inp)
+                 print('predicted')
+                 print('writing...')
                  for instance_result in result:
                      df = align_probs(instance_result, labels)
                      #write to conll file
@@ -84,4 +91,5 @@ if __name__ == "__main__":
                          f.write(line)
                          f.write('\n')
                      f.write('\n')
+                 print('written')
 
