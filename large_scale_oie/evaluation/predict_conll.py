@@ -45,8 +45,8 @@ if __name__ == "__main__":
     #define path to sentences to run the model over
     sentence_file = 'oie-benchmark/raw_sentences/all.txt'
     #sentence_output = 'oie-benchmark/raw_sentences/test_sent.jsonl'
-    sentence_output = large_scale_oie/evaluation/test_sent.jsonl
-    model_path = 'results/classic_train/'
+    sentence_output = 'large_scale_oie/evaluation/test_sent.jsonl'
+    model_path = 'results/ls_train_full/'
     output_path = 'large_scale_oie/evaluation/classic_train.conll'
     #clear output file
     if os.path.exists(output_path):
