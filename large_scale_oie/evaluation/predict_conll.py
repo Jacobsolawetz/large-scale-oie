@@ -44,21 +44,22 @@ if __name__ == "__main__":
     #define the path to the model and define the conll file to write evaluation to
     #define path to sentences to run the model over
     sentence_file = 'oie-benchmark/raw_sentences/all.txt'
-    sentence_output = 'oie-benchmark/raw_sentences/test_sent.jsonl'
+    #sentence_output = 'oie-benchmark/raw_sentences/test_sent.jsonl'
+    sentence_output = large_scale_oie/evaluation/test_sent.jsonl
     model_path = 'results/classic_train/'
     output_path = 'large_scale_oie/evaluation/classic_train.conll'
     #clear output file
     if os.path.exists(output_path):
         os.remove(output_path)
 
-
-    with open(sentence_output, "w") as f:
-        with open(sentence_file, "r") as sentences:
-            for sentence in sentences:
-                jsonl = '{' + '"' + 'sentence'  + '"'  + ' : ' + '"' +  sentence.replace('\n','') + '"' + '}'
-                f.write(jsonl)
-                f.write('\n')
-    print('sents staged')
+    
+    #with open(sentence_output, "w") as f:
+        #with open(sentence_file, "r") as sentences:
+            #for sentence in sentences:
+                #jsonl = '{' + '"' + 'sentence'  + '"'  + ' : ' + '"' +  sentence.replace('\n','') + '"' + '}'
+                #f.write(jsonl)
+                #f.write('\n')
+    #print('sents staged')
 
     with open(model_path + 'vocabulary/labels.txt', "r") as vocab:
         for label in vocab:
