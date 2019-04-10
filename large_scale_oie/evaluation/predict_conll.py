@@ -55,8 +55,8 @@ if __name__ == "__main__":
     #sentence_output = 'oie-benchmark/raw_sentences/test_sent.jsonl'
     #sentence_output = 'large_scale_oie/evaluation/test_sent.jsonl'
     sentence_output = 'large_scale_oie/evaluation/test_sent.jsonl'
-    model_path = 'results/ls_long_sort/'
-    output_path = 'large_scale_oie/evaluation/ls_long_sort.conll'
+    model_path = 'results/ls_long_sort_supervised_oie/'
+    output_path = 'large_scale_oie/evaluation/ls_long_sort_supervised_oie.conll'
     #clear output file
     if os.path.exists(output_path):
         os.remove(output_path)
