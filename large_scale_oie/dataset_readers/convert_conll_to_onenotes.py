@@ -30,6 +30,7 @@ N Coreference Coreference chain information encoded in a parenthesis structure.
 
 def main(inp, domain, out):
     df = pd.read_csv(inp, sep = "\t", skip_blank_lines = False)
+    df.columns = ['word_id', 'word', 'pred', 'pred_id', 'head_pred_id', 'sent_id', 'run_id', 'label']
     df['domain'] = domain
     df['part_number'] = '000'
     df['word_id'] = df['word_id'].fillna(-1)
