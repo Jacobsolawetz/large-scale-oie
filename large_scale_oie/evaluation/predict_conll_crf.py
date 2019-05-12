@@ -1,7 +1,6 @@
 """ Usage:
         predict_conll --in=INPUT_FILE --out=OUTPUT_FILE
 """
-#revert 5/12/2019
 
 import sys
 import os
@@ -14,8 +13,8 @@ from allennlp.predictors import Predictor
 from allennlp.data.tokenizers import WordTokenizer
 from allennlp.data.tokenizers.word_splitter import SpacyWordSplitter
 import json
-from large_scale_oie.predictors.oie_predictor import OpenIePredictor
-from large_scale_oie.models.oie_model import OieLabeler
+from large_scale_oie.predictors.oie_predictor_crf import OpenIePredictorCRF
+from large_scale_oie.models.oie_model_crf import OieLabelerCRF
 import os
 import numpy as np
 import pandas as pd
@@ -91,7 +90,7 @@ if __name__ == "__main__":
 
     archive = load_archive(model_path + 'model.tar.gz')
     
-    predictor = Predictor.from_archive(archive, 'oie')
+    predictor = Predictor.from_archive(archive, 'oie_crf')
     #iterate through sentences
     instance_iterator = 0
 

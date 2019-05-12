@@ -20,7 +20,7 @@ from allennlp.modules import ConditionalRandomField, FeedForward
 
 
 @Model.register("oie_crf")
-class OieLabeler(Model):
+class OieLabelerCRF(Model):
     """ 
     This model performs semantic role labeling using BIO tags using Propbank semantic roles.
     Specifically, it is an implmentation of `Deep Semantic Role Labeling - What works
@@ -66,7 +66,7 @@ class OieLabeler(Model):
                  label_encoding: Optional[str] = 'BIO',
                  include_start_end_transitions: bool = True,
                  constrain_crf_decoding: bool = True) -> None:
-        super(OieLabeler, self).__init__(vocab, regularizer)
+        super(OieLabelerCRF, self).__init__(vocab, regularizer)
 
         self.text_field_embedder = text_field_embedder
         self.num_classes = self.vocab.get_vocab_size("labels")

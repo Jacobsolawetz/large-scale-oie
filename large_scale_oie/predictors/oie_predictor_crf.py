@@ -9,7 +9,7 @@ from allennlp.models import Model
 from allennlp.predictors.predictor import Predictor
 from allennlp.data.tokenizers.word_splitter import SpacyWordSplitter
 from allennlp.data.tokenizers import Token
-#revert 5/12/2019
+
 def join_mwp(tags: List[str]) -> List[str]:
     """
     Join multi-word predicates to a single
@@ -170,8 +170,8 @@ def sanitize_label(label: str) -> str:
     else:
         return label
 
-@Predictor.register('oie')
-class OpenIePredictor(Predictor):
+@Predictor.register('oie_crf')
+class OpenIePredictorCRF(Predictor):
     """
     Predictor for the :class: `models.SemanticRolelabeler` model (in its Open Information variant).
     Used by online demo and for prediction on an input file using command line.
