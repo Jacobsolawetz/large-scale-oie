@@ -1,3 +1,7 @@
+""" Usage:
+        predict_conll --in=INPUT_FILE --out=OUTPUT_FILE
+"""
+
 import sys
 import os
 sys.path.append(os.getcwd())
@@ -14,6 +18,7 @@ from large_scale_oie.models.oie_model import OieLabeler
 import os
 import numpy as np
 import pandas as pd
+from docopt import docopt
 
 
 def align_probs(instance_result, labels):
@@ -47,6 +52,9 @@ def align_probs(instance_result, labels):
 
 
 if __name__ == "__main__":
+    args = docopt(__doc__)
+    input_fn = args["--in"]
+    output_fn = args["--out"]
 
     labels = []
     #define the path to the model and define the conll file to write evaluation to
@@ -55,8 +63,8 @@ if __name__ == "__main__":
     #sentence_output = 'oie-benchmark/raw_sentences/test_sent.jsonl'
     #sentence_output = 'large_scale_oie/evaluation/test_sent.jsonl'
     sentence_output = 'large_scale_oie/evaluation/test_sent.jsonl'
-    model_path = 'results/ls_long_sort_supervised_oie/'
-    output_path = 'large_scale_oie/evaluation/ls_long_sort_supervised_oie.conll'
+    model_path = input_fn
+    output_path = output_fn
     #clear output file
     if os.path.exists(output_path):
         os.remove(output_path)
