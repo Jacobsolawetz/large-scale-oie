@@ -74,7 +74,7 @@ class OieLabelerCRF(Model):
         # For the span based evaluation, we don't want to consider labels
         # for verb, because the verb index is provided to the model.
         self.span_metric = SpanBasedF1Measure(vocab, tag_namespace="labels", ignore_classes=["V"])
-
+        self.label_namespace = label_namespace
         self.encoder = encoder
         # There are exactly 2 binary features for the verb predicate embedding.
         self.binary_feature_embedding = Embedding(2, binary_feature_dim)
@@ -88,6 +88,7 @@ class OieLabelerCRF(Model):
             constrain_crf_decoding = label_encoding is not None
         if constrain_crf_decoding:
             labels = self.vocab.get_index_to_token_vocabulary(label_namespace)
+            print(labels)
             constraints = allowed_transitions(label_encoding,labels)
         else:
             constraints = None
