@@ -1,0 +1,48 @@
+{
+
+    "dataset_reader": {
+        "type": "srl",
+        "bert_model_name": "bert-base-uncased",
+      },
+
+    "iterator": {
+        "type": "bucket",
+        "batch_size": 80,
+        "sorting_keys": [["tokens", "num_tokens"]]
+    },
+
+    "train_data_path": "data/dev",
+    "validation_data_path": "data/dev",
+
+    "model": {
+        "type": "srl_bert",
+        "embedding_dropout": 0.1,
+        "bert_model": "bert-base-uncased",
+        "ignore_span_metric": true // Span metric is irrelevant for Open IE loss
+    },
+
+    "trainer": {
+        "optimizer": {
+            "type": "bert_adam",
+            "lr": 5e-5,
+            "t_total": -1,
+            "max_grad_norm": 1.0,
+            "weight_decay": 0.01,
+            "parameter_groups": [
+              [["bias", "LayerNorm.bias", "LayerNorm.weight", "layer_norm.weight"], {"weight_decay": 0.0}],
+            ],
+        },
+
+        "learning_rate_scheduler": {
+            "type": "slanted_triangular",
+            "num_epochs": 15,
+            "num_steps_per_epoch": 8829,
+        },
+        "num_epochs": 15,
+        "validation_metric": "+f1-measure-overall",
+        "num_serialized_models_to_keep": 1,
+        "should_log_learning_rate": true,
+        "cuda_device": -1,
+    },
+
+}
