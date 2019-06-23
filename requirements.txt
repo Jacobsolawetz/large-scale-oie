@@ -1,4 +1,4 @@
-allennlp==0.6.1
+allennlp
 pytest
 pytest-pythonpath
 pandas
