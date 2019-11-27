@@ -1,0 +1,849 @@
+0	Both	occur	[1]	1	1	2	A0-B
+1	occur	occur	[1]	1	1	2	P-B
+2	suddenly	occur	[1]	1	1	2	A1-B
+3	.	occur	[1]	1	1	2	O
+
+0	A	happens	[2]	2	1	2	A0-B
+1	landslide	happens	[2]	2	1	2	A0-I
+2	happens	happens	[2]	2	1	2	P-B
+3	when	happens	[2]	2	1	2	A1-B
+4	a	happens	[2]	2	1	2	A1-I
+5	large	happens	[2]	2	1	2	A1-I
+6	amount	happens	[2]	2	1	2	A1-I
+7	of	happens	[2]	2	1	2	A1-I
+8	soil	happens	[2]	2	1	2	A1-I
+9	and	happens	[2]	2	1	2	A1-I
+10	rock	happens	[2]	2	1	2	A1-I
+11	suddenly	happens	[2]	2	1	2	A1-I
+12	falls	happens	[2]	2	1	2	A1-I
+13	down	happens	[2]	2	1	2	A1-I
+14	a	happens	[2]	2	1	2	A1-I
+15	slope	happens	[2]	2	1	2	A1-I
+16	because	happens	[2]	2	1	2	A1-I
+17	of	happens	[2]	2	1	2	A1-I
+18	gravity	happens	[2]	2	1	2	A1-I
+19	.	happens	[2]	2	1	2	O
+
+0	A	falls	[12]	12	1	2	O
+1	landslide	falls	[12]	12	1	2	O
+2	happens	falls	[12]	12	1	2	O
+3	when	falls	[12]	12	1	2	O
+4	a	falls	[12]	12	1	2	A0-B
+5	large	falls	[12]	12	1	2	A0-I
+6	amount	falls	[12]	12	1	2	A0-I
+7	of	falls	[12]	12	1	2	A0-I
+8	soil	falls	[12]	12	1	2	A0-I
+9	and	falls	[12]	12	1	2	A0-I
+10	rock	falls	[12]	12	1	2	A0-I
+11	suddenly	falls	[12]	12	1	2	A2-B
+12	falls	falls	[12]	12	1	2	P-B
+13	down	falls	[12]	12	1	2	A1-B
+14	a	falls	[12]	12	1	2	A1-I
+15	slope	falls	[12]	12	1	2	A1-I
+16	because	falls	[12]	12	1	2	O
+17	of	falls	[12]	12	1	2	O
+18	gravity	falls	[12]	12	1	2	O
+19	.	falls	[12]	12	1	2	O
+
+0	A	might become	[9]	9	1	2	O
+1	landslide	might become	[9]	9	1	2	O
+2	is	might become	[9]	9	1	2	O
+3	more	might become	[9]	9	1	2	O
+4	likely	might become	[9]	9	1	2	O
+5	if	might become	[9]	9	1	2	O
+6	the	might become	[9]	9	1	2	A0-B
+7	soil	might become	[9]	9	1	2	A0-I
+8	has	might become	[9]	9	1	2	O
+9	become	might become	[9]	9	1	2	P-B
+10	wet	might become	[9]	9	1	2	A1-B
+11	from	might become	[9]	9	1	2	A2-B
+12	heavy	might become	[9]	9	1	2	A2-I
+13	rains	might become	[9]	9	1	2	A2-I
+14	.	might become	[9]	9	1	2	O
+
+0	The	becomes	[3]	3	1	2	A0-B
+1	wet	becomes	[3]	3	1	2	A0-I
+2	soil	becomes	[3]	3	1	2	A0-I
+3	becomes	becomes	[3]	3	1	2	P-B
+4	slippery	becomes	[3]	3	1	2	A1-B
+5	and	becomes	[3]	3	1	2	A1-I
+6	heavy	becomes	[3]	3	1	2	A1-I
+7	.	becomes	[3]	3	1	2	O
+
+0	Earthquakes	trigger	[2]	2	1	2	A0-B
+1	often	trigger	[2]	2	1	2	O
+2	trigger	trigger	[2]	2	1	2	P-B
+3	landslides	trigger	[2]	2	1	2	A1-B
+4	.	trigger	[2]	2	1	2	O
+
+0	The	start	[11]	11	1	2	O
+1	shaking	start	[11]	11	1	2	O
+2	ground	start	[11]	11	1	2	O
+3	causes	start	[11]	11	1	2	O
+4	soil	start	[11]	11	1	2	A0-B
+5	and	start	[11]	11	1	2	A0-I
+6	rocks	start	[11]	11	1	2	A0-I
+7	to	start	[11]	11	1	2	O
+8	break	start	[11]	11	1	2	O
+9	loose	start	[11]	11	1	2	O
+10	and	start	[11]	11	1	2	O
+11	start	start	[11]	11	1	2	P-B
+12	sliding	start	[11]	11	1	2	A1-B
+13	.	start	[11]	11	1	2	O
+
+0	The	break	[8]	8	1	2	A1-B
+1	shaking	break	[8]	8	1	2	A1-I
+2	ground	break	[8]	8	1	2	A1-I
+3	causes	break	[8]	8	1	2	O
+4	soil	break	[8]	8	1	2	A0-B
+5	and	break	[8]	8	1	2	A0-I
+6	rocks	break	[8]	8	1	2	A0-I
+7	to	break	[8]	8	1	2	O
+8	break	break	[8]	8	1	2	P-B
+9	loose	break	[8]	8	1	2	O
+10	and	break	[8]	8	1	2	O
+11	start	break	[8]	8	1	2	O
+12	sliding	break	[8]	8	1	2	O
+13	.	break	[8]	8	1	2	O
+
+0	The	shaking	[1]	1	1	2	A0-B
+1	shaking	shaking	[1]	1	1	2	P-B
+2	ground	shaking	[1]	1	1	2	A0-I
+3	causes	shaking	[1]	1	1	2	O
+4	soil	shaking	[1]	1	1	2	O
+5	and	shaking	[1]	1	1	2	O
+6	rocks	shaking	[1]	1	1	2	O
+7	to	shaking	[1]	1	1	2	O
+8	break	shaking	[1]	1	1	2	O
+9	loose	shaking	[1]	1	1	2	O
+10	and	shaking	[1]	1	1	2	O
+11	start	shaking	[1]	1	1	2	O
+12	sliding	shaking	[1]	1	1	2	O
+13	.	shaking	[1]	1	1	2	O
+
+0	The	sliding	[12]	12	1	2	A1-B
+1	shaking	sliding	[12]	12	1	2	A1-I
+2	ground	sliding	[12]	12	1	2	A1-I
+3	causes	sliding	[12]	12	1	2	O
+4	soil	sliding	[12]	12	1	2	A0-B
+5	and	sliding	[12]	12	1	2	A0-I
+6	rocks	sliding	[12]	12	1	2	A0-I
+7	to	sliding	[12]	12	1	2	O
+8	break	sliding	[12]	12	1	2	O
+9	loose	sliding	[12]	12	1	2	O
+10	and	sliding	[12]	12	1	2	O
+11	start	sliding	[12]	12	1	2	O
+12	sliding	sliding	[12]	12	1	2	P-B
+13	.	sliding	[12]	12	1	2	O
+
+0	The	causes	[3]	3	1	2	A0-B
+1	shaking	causes	[3]	3	1	2	A0-I
+2	ground	causes	[3]	3	1	2	A0-I
+3	causes	causes	[3]	3	1	2	P-B
+4	soil	causes	[3]	3	1	2	A1-B
+5	and	causes	[3]	3	1	2	A1-I
+6	rocks	causes	[3]	3	1	2	A1-I
+7	to	causes	[3]	3	1	2	A1-I
+8	break	causes	[3]	3	1	2	A1-I
+9	loose	causes	[3]	3	1	2	A1-I
+10	and	causes	[3]	3	1	2	A1-I
+11	start	causes	[3]	3	1	2	A1-I
+12	sliding	causes	[3]	3	1	2	A1-I
+13	.	causes	[3]	3	1	2	O
+
+0	If	flows	[3]	3	1	2	O
+1	a	flows	[3]	3	1	2	A0-B
+2	landslide	flows	[3]	3	1	2	A0-I
+3	flows	flows	[3]	3	1	2	P-B
+4	into	flows	[3]	3	1	2	A1-B
+5	a	flows	[3]	3	1	2	A1-I
+6	body	flows	[3]	3	1	2	A1-I
+7	of	flows	[3]	3	1	2	A1-I
+8	water	flows	[3]	3	1	2	A1-I
+9	,	flows	[3]	3	1	2	O
+10	it	flows	[3]	3	1	2	O
+11	may	flows	[3]	3	1	2	O
+12	cause	flows	[3]	3	1	2	O
+13	a	flows	[3]	3	1	2	O
+14	huge	flows	[3]	3	1	2	O
+15	wave	flows	[3]	3	1	2	O
+16	called	flows	[3]	3	1	2	O
+17	a	flows	[3]	3	1	2	O
+18	tsunami	flows	[3]	3	1	2	O
+19	.	flows	[3]	3	1	2	O
+
+0	If	cause	[12]	12	1	2	A1-B
+1	a	cause	[12]	12	1	2	A1-I
+2	landslide	cause	[12]	12	1	2	A1-I
+3	flows	cause	[12]	12	1	2	A1-I
+4	into	cause	[12]	12	1	2	A1-I
+5	a	cause	[12]	12	1	2	A1-I
+6	body	cause	[12]	12	1	2	A1-I
+7	of	cause	[12]	12	1	2	A1-I
+8	water	cause	[12]	12	1	2	A1-I
+9	,	cause	[12]	12	1	2	O
+10	it	cause	[12]	12	1	2	O
+11	may	cause	[12]	12	1	2	O
+12	cause	cause	[12]	12	1	2	P-B
+13	a	cause	[12]	12	1	2	A0-B
+14	huge	cause	[12]	12	1	2	A0-I
+15	wave	cause	[12]	12	1	2	A0-I
+16	called	cause	[12]	12	1	2	A0-I
+17	a	cause	[12]	12	1	2	A0-I
+18	tsunami	cause	[12]	12	1	2	A0-I
+19	.	cause	[12]	12	1	2	O
+
+0	If	called	[16]	16	1	2	O
+1	a	called	[16]	16	1	2	O
+2	landslide	called	[16]	16	1	2	O
+3	flows	called	[16]	16	1	2	O
+4	into	called	[16]	16	1	2	O
+5	a	called	[16]	16	1	2	O
+6	body	called	[16]	16	1	2	O
+7	of	called	[16]	16	1	2	O
+8	water	called	[16]	16	1	2	O
+9	,	called	[16]	16	1	2	O
+10	it	called	[16]	16	1	2	O
+11	may	called	[16]	16	1	2	O
+12	cause	called	[16]	16	1	2	O
+13	a	called	[16]	16	1	2	O
+14	huge	called	[16]	16	1	2	O
+15	wave	called	[16]	16	1	2	O
+16	called	called	[16]	16	1	2	P-B
+17	a	called	[16]	16	1	2	A0-B
+18	tsunami	called	[16]	16	1	2	A0-I
+19	.	called	[16]	16	1	2	O
+
+0	Mudslides	can occur	[1]	1	1	2	A0-B
+1	occur	can occur	[1]	1	1	2	P-B
+2	where	can occur	[1]	1	1	2	A1-B
+3	the	can occur	[1]	1	1	2	A1-I
+4	soil	can occur	[1]	1	1	2	A1-I
+5	is	can occur	[1]	1	1	2	A1-I
+6	mostly	can occur	[1]	1	1	2	A1-I
+7	clay	can occur	[1]	1	1	2	A1-I
+8	.	can occur	[1]	1	1	2	O
+
+0	Like	occur	[5]	5	1	2	O
+1	landslides	occur	[5]	5	1	2	O
+2	,	occur	[5]	5	1	2	O
+3	mudslides	occur	[5]	5	1	2	A0-B
+4	usually	occur	[5]	5	1	2	A2-B
+5	occur	occur	[5]	5	1	2	P-B
+6	when	occur	[5]	5	1	2	A1-B
+7	the	occur	[5]	5	1	2	A1-I
+8	soil	occur	[5]	5	1	2	A1-I
+9	is	occur	[5]	5	1	2	A1-I
+10	wet	occur	[5]	5	1	2	A1-I
+11	.	occur	[5]	5	1	2	O
+
+0	Wet	forms	[2]	2	1	2	A0-B
+1	clay	forms	[2]	2	1	2	A0-I
+2	forms	forms	[2]	2	1	2	P-B
+3	very	forms	[2]	2	1	2	A1-B
+4	slippery	forms	[2]	2	1	2	A1-I
+5	mud	forms	[2]	2	1	2	A1-I
+6	that	forms	[2]	2	1	2	A1-I
+7	slides	forms	[2]	2	1	2	A1-I
+8	easily	forms	[2]	2	1	2	A1-I
+9	.	forms	[2]	2	1	2	O
+
+0	Wet	slides	[7]	7	1	2	O
+1	clay	slides	[7]	7	1	2	O
+2	forms	slides	[7]	7	1	2	O
+3	very	slides	[7]	7	1	2	A0-B
+4	slippery	slides	[7]	7	1	2	A0-I
+5	mud	slides	[7]	7	1	2	A0-I
+6	that	slides	[7]	7	1	2	O
+7	slides	slides	[7]	7	1	2	P-B
+8	easily	slides	[7]	7	1	2	A1-B
+9	.	slides	[7]	7	1	2	O
+
+0	Both	might move	[2]	2	1	2	A0-B
+1	may	might move	[2]	2	1	2	O
+2	move	might move	[2]	2	1	2	P-B
+3	a	might move	[2]	2	1	2	A1-B
+4	lot	might move	[2]	2	1	2	A1-I
+5	of	might move	[2]	2	1	2	A1-I
+6	soil	might move	[2]	2	1	2	A1-I
+7	and	might move	[2]	2	1	2	A1-I
+8	rock	might move	[2]	2	1	2	A1-I
+9	.	might move	[2]	2	1	2	O
+
+0	You	can see	[1, 2]	2	1	2	O
+1	can	can see	[1, 2]	2	1	2	P-B
+2	see	can see	[1, 2]	2	1	2	P-I
+3	how	can see	[1, 2]	2	1	2	A0-B
+4	it	can see	[1, 2]	2	1	2	A0-I
+5	happens	can see	[1, 2]	2	1	2	A0-I
+6	in	can see	[1, 2]	2	1	2	A1-B
+7	Figure	can see	[1, 2]	2	1	2	A1-I
+8	10.32	can see	[1, 2]	2	1	2	A1-I
+9	.	can see	[1, 2]	2	1	2	O
+
+0	All	moves	[3]	3	1	2	A0-B
+1	the	moves	[3]	3	1	2	A0-I
+2	material	moves	[3]	3	1	2	A0-I
+3	moves	moves	[3]	3	1	2	P-B
+4	together	moves	[3]	3	1	2	A1-B
+5	in	moves	[3]	3	1	2	A1-I
+6	big	moves	[3]	3	1	2	A1-I
+7	chunks	moves	[3]	3	1	2	A1-I
+8	.	moves	[3]	3	1	2	O
+
+0	Slump	can caused	[3]	3	1	2	A0-B
+1	may	can caused	[3]	3	1	2	O
+2	be	can caused	[3]	3	1	2	O
+3	caused	can caused	[3]	3	1	2	P-B
+4	by	can caused	[3]	3	1	2	O
+5	a	can caused	[3]	3	1	2	O
+6	layer	can caused	[3]	3	1	2	O
+7	of	can caused	[3]	3	1	2	O
+8	slippery	can caused	[3]	3	1	2	O
+9	,	can caused	[3]	3	1	2	O
+10	wet	can caused	[3]	3	1	2	O
+11	clay	can caused	[3]	3	1	2	O
+12	underneath	can caused	[3]	3	1	2	O
+13	the	can caused	[3]	3	1	2	O
+14	rock	can caused	[3]	3	1	2	O
+15	and	can caused	[3]	3	1	2	O
+16	soil	can caused	[3]	3	1	2	O
+17	on	can caused	[3]	3	1	2	O
+18	a	can caused	[3]	3	1	2	O
+19	hillside	can caused	[3]	3	1	2	O
+20	.	can caused	[3]	3	1	2	O
+
+0	Or	undercuts	[7]	7	1	2	O
+1	it	undercuts	[7]	7	1	2	O
+2	may	undercuts	[7]	7	1	2	O
+3	occur	undercuts	[7]	7	1	2	O
+4	when	undercuts	[7]	7	1	2	O
+5	a	undercuts	[7]	7	1	2	A0-B
+6	river	undercuts	[7]	7	1	2	A0-I
+7	undercuts	undercuts	[7]	7	1	2	P-B
+8	a	undercuts	[7]	7	1	2	A1-B
+9	slope	undercuts	[7]	7	1	2	A1-I
+10	.	undercuts	[7]	7	1	2	O
+
+0	Slump	leaves	[1]	1	1	2	A0-B
+1	leaves	leaves	[1]	1	1	2	P-B
+2	behind	leaves	[1]	1	1	2	O
+3	crescent-shaped	leaves	[1]	1	1	2	A1-B
+4	scars	leaves	[1]	1	1	2	A1-I
+5	on	leaves	[1]	1	1	2	A2-B
+6	the	leaves	[1]	1	1	2	A2-I
+7	hillside	leaves	[1]	1	1	2	A2-I
+8	.	leaves	[1]	1	1	2	O
+
+0	Creep	happening	[8]	8	1	2	A0-B
+1	occurs	happening	[8]	8	1	2	O
+2	so	happening	[8]	8	1	2	O
+3	slowly	happening	[8]	8	1	2	A1-B
+4	you	happening	[8]	8	1	2	O
+5	cant	happening	[8]	8	1	2	O
+6	see	happening	[8]	8	1	2	O
+7	it	happening	[8]	8	1	2	O
+8	happening	happening	[8]	8	1	2	P-B
+9	.	happening	[8]	8	1	2	O
+
+0	You	can see	[3]	3	1	2	O
+1	can	can see	[3]	3	1	2	O
+2	only	can see	[3]	3	1	2	O
+3	see	can see	[3]	3	1	2	P-B
+4	the	can see	[3]	3	1	2	A0-B
+5	effects	can see	[3]	3	1	2	A0-I
+6	of	can see	[3]	3	1	2	A0-I
+7	creep	can see	[3]	3	1	2	A0-I
+8	after	can see	[3]	3	1	2	A0-I
+9	years	can see	[3]	3	1	2	A0-I
+10	of	can see	[3]	3	1	2	A0-I
+11	movement	can see	[3]	3	1	2	A0-I
+12	.	can see	[3]	3	1	2	O
+
+0	This	illustrated	[2]	2	1	2	A0-B
+1	is	illustrated	[2]	2	1	2	O
+2	illustrated	illustrated	[2]	2	1	2	P-B
+3	in	illustrated	[2]	2	1	2	A1-B
+4	Figure	illustrated	[2]	2	1	2	A1-I
+5	10.33	illustrated	[2]	2	1	2	A1-I
+6	.	illustrated	[2]	2	1	2	O
+
+0	The	moving	[2]	2	1	2	O
+1	slowly	moving	[2]	2	1	2	A1-B
+2	moving	moving	[2]	2	1	2	P-B
+3	ground	moving	[2]	2	1	2	A0-B
+4	causes	moving	[2]	2	1	2	O
+5	trees	moving	[2]	2	1	2	O
+6	,	moving	[2]	2	1	2	O
+7	fence	moving	[2]	2	1	2	O
+8	posts	moving	[2]	2	1	2	O
+9	,	moving	[2]	2	1	2	O
+10	and	moving	[2]	2	1	2	O
+11	other	moving	[2]	2	1	2	O
+12	structures	moving	[2]	2	1	2	O
+13	on	moving	[2]	2	1	2	O
+14	the	moving	[2]	2	1	2	O
+15	surface	moving	[2]	2	1	2	O
+16	to	moving	[2]	2	1	2	O
+17	tilt	moving	[2]	2	1	2	O
+18	downhill	moving	[2]	2	1	2	O
+19	.	moving	[2]	2	1	2	O
+
+0	The	causes	[4]	4	1	2	A0-B
+1	slowly	causes	[4]	4	1	2	A0-I
+2	moving	causes	[4]	4	1	2	A0-I
+3	ground	causes	[4]	4	1	2	A0-I
+4	causes	causes	[4]	4	1	2	P-B
+5	trees	causes	[4]	4	1	2	A1-B
+6	,	causes	[4]	4	1	2	A1-I
+7	fence	causes	[4]	4	1	2	A1-I
+8	posts	causes	[4]	4	1	2	A1-I
+9	,	causes	[4]	4	1	2	A1-I
+10	and	causes	[4]	4	1	2	A1-I
+11	other	causes	[4]	4	1	2	A1-I
+12	structures	causes	[4]	4	1	2	A1-I
+13	on	causes	[4]	4	1	2	A1-I
+14	the	causes	[4]	4	1	2	A1-I
+15	surface	causes	[4]	4	1	2	A1-I
+16	to	causes	[4]	4	1	2	A1-I
+17	tilt	causes	[4]	4	1	2	A1-I
+18	downhill	causes	[4]	4	1	2	A1-I
+19	.	causes	[4]	4	1	2	O
+
+0	Creep	thaws	[9]	9	1	2	A0-B
+1	usually	thaws	[9]	9	1	2	O
+2	takes	thaws	[9]	9	1	2	O
+3	place	thaws	[9]	9	1	2	O
+4	where	thaws	[9]	9	1	2	O
+5	the	thaws	[9]	9	1	2	O
+6	ground	thaws	[9]	9	1	2	O
+7	freezes	thaws	[9]	9	1	2	O
+8	and	thaws	[9]	9	1	2	O
+9	thaws	thaws	[9]	9	1	2	P-B
+10	frequently	thaws	[9]	9	1	2	A1-B
+11	.	thaws	[9]	9	1	2	O
+
+0	Creep	takes	[2]	2	1	2	A0-B
+1	usually	takes	[2]	2	1	2	O
+2	takes	takes	[2]	2	1	2	P-B
+3	place	takes	[2]	2	1	2	A1-B
+4	where	takes	[2]	2	1	2	A1-I
+5	the	takes	[2]	2	1	2	A1-I
+6	ground	takes	[2]	2	1	2	A1-I
+7	freezes	takes	[2]	2	1	2	A1-I
+8	and	takes	[2]	2	1	2	A1-I
+9	thaws	takes	[2]	2	1	2	A1-I
+10	frequently	takes	[2]	2	1	2	A1-I
+11	.	takes	[2]	2	1	2	O
+
+0	Creep	freezes	[7]	7	1	2	O
+1	usually	freezes	[7]	7	1	2	O
+2	takes	freezes	[7]	7	1	2	O
+3	place	freezes	[7]	7	1	2	O
+4	where	freezes	[7]	7	1	2	O
+5	the	freezes	[7]	7	1	2	A0-B
+6	ground	freezes	[7]	7	1	2	A0-I
+7	freezes	freezes	[7]	7	1	2	P-B
+8	and	freezes	[7]	7	1	2	O
+9	thaws	freezes	[7]	7	1	2	O
+10	frequently	freezes	[7]	7	1	2	O
+11	.	freezes	[7]	7	1	2	O
+
+0	Soil	freezes	[10]	10	1	2	O
+1	and	freezes	[10]	10	1	2	O
+2	rock	freezes	[10]	10	1	2	O
+3	particles	freezes	[10]	10	1	2	O
+4	are	freezes	[10]	10	1	2	O
+5	lifted	freezes	[10]	10	1	2	O
+6	up	freezes	[10]	10	1	2	O
+7	when	freezes	[10]	10	1	2	O
+8	the	freezes	[10]	10	1	2	A0-B
+9	ground	freezes	[10]	10	1	2	A0-I
+10	freezes	freezes	[10]	10	1	2	P-B
+11	.	freezes	[10]	10	1	2	O
+
+0	Soil	can lifted	[5]	5	1	2	A0-B
+1	and	can lifted	[5]	5	1	2	A0-I
+2	rock	can lifted	[5]	5	1	2	A0-I
+3	particles	can lifted	[5]	5	1	2	A0-I
+4	are	can lifted	[5]	5	1	2	O
+5	lifted	can lifted	[5]	5	1	2	P-B
+6	up	can lifted	[5]	5	1	2	O
+7	when	can lifted	[5]	5	1	2	A1-B
+8	the	can lifted	[5]	5	1	2	A1-I
+9	ground	can lifted	[5]	5	1	2	A1-I
+10	freezes	can lifted	[5]	5	1	2	A1-I
+11	.	can lifted	[5]	5	1	2	O
+
+0	When	thaws	[3]	3	1	2	O
+1	the	thaws	[3]	3	1	2	A0-B
+2	ground	thaws	[3]	3	1	2	A0-I
+3	thaws	thaws	[3]	3	1	2	P-B
+4	,	thaws	[3]	3	1	2	O
+5	the	thaws	[3]	3	1	2	O
+6	particles	thaws	[3]	3	1	2	O
+7	settle	thaws	[3]	3	1	2	O
+8	down	thaws	[3]	3	1	2	O
+9	again	thaws	[3]	3	1	2	O
+10	.	thaws	[3]	3	1	2	O
+
+0	When	settle	[7]	7	1	2	A1-B
+1	the	settle	[7]	7	1	2	A1-I
+2	ground	settle	[7]	7	1	2	A1-I
+3	thaws	settle	[7]	7	1	2	A1-I
+4	,	settle	[7]	7	1	2	O
+5	the	settle	[7]	7	1	2	A0-B
+6	particles	settle	[7]	7	1	2	A0-I
+7	settle	settle	[7]	7	1	2	P-B
+8	down	settle	[7]	7	1	2	O
+9	again	settle	[7]	7	1	2	O
+10	.	settle	[7]	7	1	2	O
+
+0	The	needed	[8]	8	1	2	A0-B
+1	atmosphere	needed	[8]	8	1	2	A0-I
+2	supports	needed	[8]	8	1	2	O
+3	life	needed	[8]	8	1	2	O
+4	,	needed	[8]	8	1	2	O
+5	and	needed	[8]	8	1	2	O
+6	is	needed	[8]	8	1	2	O
+7	also	needed	[8]	8	1	2	O
+8	needed	needed	[8]	8	1	2	P-B
+9	for	needed	[8]	8	1	2	A1-B
+10	the	needed	[8]	8	1	2	A1-I
+11	water	needed	[8]	8	1	2	A1-I
+12	cycle	needed	[8]	8	1	2	A1-I
+13	and	needed	[8]	8	1	2	A1-I
+14	weather	needed	[8]	8	1	2	A1-I
+15	.	needed	[8]	8	1	2	O
+
+0	The	supports	[2]	2	1	2	A0-B
+1	atmosphere	supports	[2]	2	1	2	A0-I
+2	supports	supports	[2]	2	1	2	P-B
+3	life	supports	[2]	2	1	2	A1-B
+4	,	supports	[2]	2	1	2	O
+5	and	supports	[2]	2	1	2	O
+6	is	supports	[2]	2	1	2	O
+7	also	supports	[2]	2	1	2	O
+8	needed	supports	[2]	2	1	2	O
+9	for	supports	[2]	2	1	2	O
+10	the	supports	[2]	2	1	2	O
+11	water	supports	[2]	2	1	2	O
+12	cycle	supports	[2]	2	1	2	O
+13	and	supports	[2]	2	1	2	O
+14	weather	supports	[2]	2	1	2	O
+15	.	supports	[2]	2	1	2	O
+
+0	Carbon	needed	[12]	12	1	2	A0-B
+1	dioxide	needed	[12]	12	1	2	A0-I
+2	and	needed	[12]	12	1	2	A0-I
+3	oxygen	needed	[12]	12	1	2	A0-I
+4	are	needed	[12]	12	1	2	O
+5	the	needed	[12]	12	1	2	A1-B
+6	gases	needed	[12]	12	1	2	A1-I
+7	in	needed	[12]	12	1	2	A2-B
+8	the	needed	[12]	12	1	2	A2-I
+9	atmosphere	needed	[12]	12	1	2	A2-I
+10	that	needed	[12]	12	1	2	O
+11	are	needed	[12]	12	1	2	O
+12	needed	needed	[12]	12	1	2	P-B
+13	for	needed	[12]	12	1	2	A3-B
+14	life	needed	[12]	12	1	2	A3-I
+15	.	needed	[12]	12	1	2	O
+
+0	Plants	need	[1]	1	1	2	A0-B
+1	need	need	[1]	1	1	2	P-B
+2	carbon	need	[1]	1	1	2	A1-B
+3	dioxide	need	[1]	1	1	2	A1-I
+4	for	need	[1]	1	1	2	A2-B
+5	photosynthesis	need	[1]	1	1	2	A2-I
+6	.	need	[1]	1	1	2	O
+
+0	The	releases	[2]	2	1	2	A0-B
+1	process	releases	[2]	2	1	2	A0-I
+2	releases	releases	[2]	2	1	2	P-B
+3	oxygen	releases	[2]	2	1	2	A1-B
+4	.	releases	[2]	2	1	2	O
+
+0	Other	depend	[3]	3	1	2	A0-B
+1	living	depend	[3]	3	1	2	A0-I
+2	things	depend	[3]	3	1	2	A0-I
+3	depend	depend	[3]	3	1	2	P-B
+4	on	depend	[3]	3	1	2	O
+5	plants	depend	[3]	3	1	2	A1-B
+6	for	depend	[3]	3	1	2	A2-B
+7	food	depend	[3]	3	1	2	A2-I
+8	.	depend	[3]	3	1	2	O
+
+0	These	need	[2]	2	1	2	A0-B
+1	organisms	need	[2]	2	1	2	A0-I
+2	need	need	[2]	2	1	2	P-B
+3	the	need	[2]	2	1	2	A1-B
+4	oxygen	need	[2]	2	1	2	A1-I
+5	plants	need	[2]	2	1	2	A1-I
+6	release	need	[2]	2	1	2	A1-I
+7	to	need	[2]	2	1	2	A2-B
+8	get	need	[2]	2	1	2	A2-I
+9	energy	need	[2]	2	1	2	A2-I
+10	out	need	[2]	2	1	2	A2-I
+11	of	need	[2]	2	1	2	A2-I
+12	the	need	[2]	2	1	2	A2-I
+13	food	need	[2]	2	1	2	A2-I
+14	.	need	[2]	2	1	2	O
+
+0	These	release	[6]	6	1	2	O
+1	organisms	release	[6]	6	1	2	O
+2	need	release	[6]	6	1	2	O
+3	the	release	[6]	6	1	2	O
+4	oxygen	release	[6]	6	1	2	A1-B
+5	plants	release	[6]	6	1	2	A0-B
+6	release	release	[6]	6	1	2	P-B
+7	to	release	[6]	6	1	2	O
+8	get	release	[6]	6	1	2	O
+9	energy	release	[6]	6	1	2	O
+10	out	release	[6]	6	1	2	O
+11	of	release	[6]	6	1	2	O
+12	the	release	[6]	6	1	2	O
+13	food	release	[6]	6	1	2	O
+14	.	release	[6]	6	1	2	O
+
+0	Even	need	[2]	2	1	2	O
+1	plants	need	[2]	2	1	2	A0-B
+2	need	need	[2]	2	1	2	P-B
+3	oxygen	need	[2]	2	1	2	A1-B
+4	for	need	[2]	2	1	2	O
+5	this	need	[2]	2	1	2	O
+6	purpose	need	[2]	2	1	2	O
+7	.	need	[2]	2	1	2	O
+
+0	The	living	[3]	3	1	2	O
+1	atmosphere	living	[3]	3	1	2	O
+2	protects	living	[3]	3	1	2	O
+3	living	living	[3]	3	1	2	P-B
+4	things	living	[3]	3	1	2	A0-B
+5	from	living	[3]	3	1	2	O
+6	the	living	[3]	3	1	2	O
+7	Suns	living	[3]	3	1	2	O
+8	most	living	[3]	3	1	2	O
+9	harmful	living	[3]	3	1	2	O
+10	rays	living	[3]	3	1	2	O
+11	.	living	[3]	3	1	2	O
+
+0	The	protects	[2]	2	1	2	A0-B
+1	atmosphere	protects	[2]	2	1	2	A0-I
+2	protects	protects	[2]	2	1	2	P-B
+3	living	protects	[2]	2	1	2	A1-B
+4	things	protects	[2]	2	1	2	A1-I
+5	from	protects	[2]	2	1	2	O
+6	the	protects	[2]	2	1	2	O
+7	Suns	protects	[2]	2	1	2	O
+8	most	protects	[2]	2	1	2	O
+9	harmful	protects	[2]	2	1	2	O
+10	rays	protects	[2]	2	1	2	O
+11	.	protects	[2]	2	1	2	O
+
+0	Gases	reflect	[1]	1	1	2	A0-B
+1	reflect	reflect	[1]	1	1	2	P-B
+2	or	reflect	[1]	1	1	2	O
+3	absorb	reflect	[1]	1	1	2	O
+4	the	reflect	[1]	1	1	2	A1-B
+5	strongest	reflect	[1]	1	1	2	A1-I
+6	rays	reflect	[1]	1	1	2	A1-I
+7	of	reflect	[1]	1	1	2	A1-I
+8	sunlight	reflect	[1]	1	1	2	A1-I
+9	.	reflect	[1]	1	1	2	O
+
+0	Gases	absorb	[3]	3	1	2	A0-B
+1	reflect	absorb	[3]	3	1	2	O
+2	or	absorb	[3]	3	1	2	O
+3	absorb	absorb	[3]	3	1	2	P-B
+4	the	absorb	[3]	3	1	2	A1-B
+5	strongest	absorb	[3]	3	1	2	A1-I
+6	rays	absorb	[3]	3	1	2	A1-I
+7	of	absorb	[3]	3	1	2	A1-I
+8	sunlight	absorb	[3]	3	1	2	A1-I
+9	.	absorb	[3]	3	1	2	O
+
+0	Gases	surround	[4]	4	1	2	A0-B
+1	in	surround	[4]	4	1	2	A0-I
+2	the	surround	[4]	4	1	2	A0-I
+3	atmosphere	surround	[4]	4	1	2	A0-I
+4	surround	surround	[4]	4	1	2	P-B
+5	Earth	surround	[4]	4	1	2	A1-B
+6	like	surround	[4]	4	1	2	A2-B
+7	a	surround	[4]	4	1	2	A2-I
+8	blanket	surround	[4]	4	1	2	A2-I
+9	.	surround	[4]	4	1	2	O
+
+0	They	support	[9]	9	1	2	O
+1	keep	support	[9]	9	1	2	O
+2	the	support	[9]	9	1	2	A0-B
+3	temperature	support	[9]	9	1	2	A0-I
+4	in	support	[9]	9	1	2	O
+5	a	support	[9]	9	1	2	O
+6	range	support	[9]	9	1	2	O
+7	that	support	[9]	9	1	2	O
+8	can	support	[9]	9	1	2	O
+9	support	support	[9]	9	1	2	P-B
+10	life	support	[9]	9	1	2	A1-B
+11	.	support	[9]	9	1	2	O
+
+0	They	support	[9]	9	1	2	O
+1	keep	support	[9]	9	1	2	O
+2	the	support	[9]	9	1	2	O
+3	temperature	support	[9]	9	1	2	A0-B
+4	in	support	[9]	9	1	2	A0-I
+5	a	support	[9]	9	1	2	A0-I
+6	range	support	[9]	9	1	2	A0-I
+7	that	support	[9]	9	1	2	O
+8	can	support	[9]	9	1	2	O
+9	support	support	[9]	9	1	2	P-B
+10	life	support	[9]	9	1	2	A1-B
+11	.	support	[9]	9	1	2	O
+
+0	The	keep	[2]	2	1	2	A0-B
+1	gases	keep	[2]	2	1	2	A0-I
+2	keep	keep	[2]	2	1	2	P-B
+3	out	keep	[2]	2	1	2	O
+4	some	keep	[2]	2	1	2	O
+5	of	keep	[2]	2	1	2	O
+6	the	keep	[2]	2	1	2	O
+7	Suns	keep	[2]	2	1	2	O
+8	scorching	keep	[2]	2	1	2	O
+9	heat	keep	[2]	2	1	2	O
+10	during	keep	[2]	2	1	2	A1-B
+11	the	keep	[2]	2	1	2	A1-I
+12	day	keep	[2]	2	1	2	A1-I
+13	.	keep	[2]	2	1	2	O
+
+0	Figure	shows	[2]	2	1	2	A0-B
+1	15.2	shows	[2]	2	1	2	A0-I
+2	shows	shows	[2]	2	1	2	P-B
+3	the	shows	[2]	2	1	2	A1-B
+4	role	shows	[2]	2	1	2	A1-I
+5	of	shows	[2]	2	1	2	A1-I
+6	the	shows	[2]	2	1	2	A1-I
+7	atmosphere	shows	[2]	2	1	2	A1-I
+8	in	shows	[2]	2	1	2	A1-I
+9	the	shows	[2]	2	1	2	A1-I
+10	water	shows	[2]	2	1	2	A1-I
+11	cycle	shows	[2]	2	1	2	A1-I
+12	.	shows	[2]	2	1	2	O
+
+0	Water	rises	[2]	2	1	2	A0-B
+1	vapor	rises	[2]	2	1	2	A0-I
+2	rises	rises	[2]	2	1	2	P-B
+3	from	rises	[2]	2	1	2	O
+4	Earths	rises	[2]	2	1	2	A1-B
+5	surface	rises	[2]	2	1	2	A1-I
+6	into	rises	[2]	2	1	2	O
+7	the	rises	[2]	2	1	2	A2-B
+8	atmosphere	rises	[2]	2	1	2	A2-I
+9	.	rises	[2]	2	1	2	O
+
+0	The	form	[10]	10	1	2	A0-B
+1	water	form	[10]	10	1	2	A0-I
+2	vapor	form	[10]	10	1	2	A0-I
+3	may	form	[10]	10	1	2	O
+4	then	form	[10]	10	1	2	O
+5	condense	form	[10]	10	1	2	O
+6	into	form	[10]	10	1	2	O
+7	water	form	[10]	10	1	2	O
+8	droplets	form	[10]	10	1	2	O
+9	and	form	[10]	10	1	2	O
+10	form	form	[10]	10	1	2	P-B
+11	clouds	form	[10]	10	1	2	A1-B
+12	.	form	[10]	10	1	2	O
+
+0	The	condense	[5]	5	1	2	A0-B
+1	water	condense	[5]	5	1	2	A0-I
+2	vapor	condense	[5]	5	1	2	A0-I
+3	may	condense	[5]	5	1	2	O
+4	then	condense	[5]	5	1	2	O
+5	condense	condense	[5]	5	1	2	P-B
+6	into	condense	[5]	5	1	2	O
+7	water	condense	[5]	5	1	2	A1-B
+8	droplets	condense	[5]	5	1	2	A1-I
+9	and	condense	[5]	5	1	2	O
+10	form	condense	[5]	5	1	2	O
+11	clouds	condense	[5]	5	1	2	O
+12	.	condense	[5]	5	1	2	O
+
+0	If	might fall	[9]	9	1	2	O
+1	enough	might fall	[9]	9	1	2	O
+2	water	might fall	[9]	9	1	2	A0-B
+3	droplets	might fall	[9]	9	1	2	A0-I
+4	collect	might fall	[9]	9	1	2	O
+5	in	might fall	[9]	9	1	2	O
+6	clouds	might fall	[9]	9	1	2	O
+7	they	might fall	[9]	9	1	2	O
+8	may	might fall	[9]	9	1	2	O
+9	fall	might fall	[9]	9	1	2	P-B
+10	as	might fall	[9]	9	1	2	A1-B
+11	rain	might fall	[9]	9	1	2	A1-I
+12	.	might fall	[9]	9	1	2	O
+
+0	If	collect	[4]	4	1	2	O
+1	enough	collect	[4]	4	1	2	O
+2	water	collect	[4]	4	1	2	A0-B
+3	droplets	collect	[4]	4	1	2	A0-I
+4	collect	collect	[4]	4	1	2	P-B
+5	in	collect	[4]	4	1	2	A1-B
+6	clouds	collect	[4]	4	1	2	A1-I
+7	they	collect	[4]	4	1	2	O
+8	may	collect	[4]	4	1	2	O
+9	fall	collect	[4]	4	1	2	O
+10	as	collect	[4]	4	1	2	O
+11	rain	collect	[4]	4	1	2	O
+12	.	collect	[4]	4	1	2	O
+
+0	This	gets	[3]	3	1	2	O
+1	how	gets	[3]	3	1	2	O
+2	freshwater	gets	[3]	3	1	2	A0-B
+3	gets	gets	[3]	3	1	2	P-B
+4	from	gets	[3]	3	1	2	O
+5	the	gets	[3]	3	1	2	A1-B
+6	atmosphere	gets	[3]	3	1	2	A1-I
+7	back	gets	[3]	3	1	2	A1-I
+8	to	gets	[3]	3	1	2	A1-I
+9	Earths	gets	[3]	3	1	2	A1-I
+10	surface	gets	[3]	3	1	2	A1-I
+11	.	gets	[3]	3	1	2	O
+
+0	Most	occurs	[2]	2	1	2	A0-B
+1	weather	occurs	[2]	2	1	2	A0-I
+2	occurs	occurs	[2]	2	1	2	P-B
+3	because	occurs	[2]	2	1	2	A1-B
+4	the	occurs	[2]	2	1	2	A1-I
+5	atmosphere	occurs	[2]	2	1	2	A1-I
+6	heats	occurs	[2]	2	1	2	A1-I
+7	up	occurs	[2]	2	1	2	A1-I
+8	more	occurs	[2]	2	1	2	A1-I
+9	in	occurs	[2]	2	1	2	A1-I
+10	some	occurs	[2]	2	1	2	A1-I
+11	places	occurs	[2]	2	1	2	A1-I
+12	than	occurs	[2]	2	1	2	A1-I
+13	others	occurs	[2]	2	1	2	A1-I
+14	.	occurs	[2]	2	1	2	O
+
+0	Most	heats	[6]	6	1	2	O
+1	weather	heats	[6]	6	1	2	O
+2	occurs	heats	[6]	6	1	2	O
+3	because	heats	[6]	6	1	2	O
+4	the	heats	[6]	6	1	2	A0-B
+5	atmosphere	heats	[6]	6	1	2	A0-I
+6	heats	heats	[6]	6	1	2	P-B
+7	up	heats	[6]	6	1	2	A1-B
+8	more	heats	[6]	6	1	2	A1-I
+9	in	heats	[6]	6	1	2	A1-I
+10	some	heats	[6]	6	1	2	A1-I
+11	places	heats	[6]	6	1	2	A1-I
+12	than	heats	[6]	6	1	2	A1-I
+13	others	heats	[6]	6	1	2	A1-I
+14	.	heats	[6]	6	1	2	A1-I
+
+0	Weather	makes	[1]	1	1	2	A0-B
+1	makes	makes	[1]	1	1	2	P-B
+2	life	makes	[1]	1	1	2	A1-B
+3	interesting	makes	[1]	1	1	2	A1-I
+4	.	makes	[1]	1	1	2	O
+
