@@ -119,7 +119,7 @@ class Extraction:
     Store and print an OIE extraction
     """
     def __init__(self, sent, pred, args, probs,
-                 calc_prob = lambda probs: 1.0 / (reduce(lambda x, y: x * y, probs) + 0.001)):
+                 calc_prob = lambda x: np.mean(np.log(np.clip(x, 1e-5, 1 - 1e-5)))):
         """
         sent - Tokenized sentence - list of strings
         pred - Predicate word
@@ -129,6 +129,11 @@ class Extraction:
         calc_prob - function which takes a list of probabilities for each of the
                     items and computes a single probability for the joint occurence of this extraction.
         """
+        probs = np.array(probs)
+        print('sent: ' + str(sent))
+        print('args: ' + str(args))
+        print('probs: ' + str(probs))
+        print('calc_prob: ' + str(calc_prob(probs)))
         self.sent = sent
         self.calc_prob = calc_prob
         self.probs = probs
