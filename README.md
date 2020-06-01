@@ -61,18 +61,20 @@ To use the evaluation script after prediction, you must first convert to tabbed 
 
 This will take the predictions made by the extractor and transform them into confidences that can be thresholded during eval. 
 
-Now you move to the folder, `oie_benchmark` and you have a couple of options for a test set:
+Now you move to the folder, `oie-evaluation` and you have a couple of options for a test set:
 
-* `eval.oie` new eval for LSOIE
-* `test.oie.orig` old eval for rnnoie
+* `eval.oie` new test set for LSOIE
+* `test.oie.orig` old test set for rnnoie
+* `eval.oie.correct.head` new test set with correct syntactic head match
+* `test.oie.orig.correct.head` old test set with correct styntatctic head match
 
 Running the evaluation command
 
 ```python3 benchmark.py --gold=./oie_corpus/eval.oie --out=eval/srl_bert_oie2016.dat --tabbed=./systems_output/ls_long_sort_orig_qdist_old_model_new_eval.txt```
 
-And example evaluation series is in the file
+And example evaluation series to create eval plots is in the file
 
-```oie_benchmark/paper_eval.sh```
+```oie_eval/paper_eval.sh```
 
 ## Please Stay in Touch
 
