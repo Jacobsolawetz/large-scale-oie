@@ -40,10 +40,10 @@
   },
 
   "trainer": {
-    "num_epochs": 100,
+    "num_epochs": 20,
     "grad_clipping": 1.0,
     "patience": 500,
-    "cuda_device": 0,
+    "cuda_device": -1,
     "optimizer": {
       "type": "adadelta",
       "rho": 0.9
