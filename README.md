@@ -24,12 +24,58 @@ This repository contains code to train your open information extractor using the
 * `predictors` where predictions are made
 * `evaluation` where evalations is made with trained models
 
+In the models folder there are a few options available to use:
+
+* the vanilla `rnnoie` model
+* the `rnnoie` model with a crf output layer
+* the `srl_bert` model adapted for OIE
+
+### Prepare Data for Training
 To get started training, first convert your chosen LSOIE data into allennlp connl format with the following command in `./large_scale_oie/dataset_readers`:
 
 ```python convert_conll_to_onenotes.py --inp extraction_conlls/train.oie.conll --domain train --out onto_notes_conlls/train.gold_conll```
 
+### Specify and Run Experiment
+
 Now that you have your data ready, specify an experiment json in `./experiments`. There you will see an opportunity to specify your train and validation paths. 
 
-Then, you write a training file like `run_training.sh` which, when run `./run_training.sh` will kick off the allennlp framework. 
+Then, you write a training file like `run_training.sh` which, when run `./run_training.sh` will kick off the allennlp framework. Model weights and tensorboard logs are saved in `./results'.
+
+## Making Predictions
+
+Once you have trained your open information extractor, you can use it to make some predictions!
+
+The predictor is built into the `large_scale_oie/evaluation` folder and it is pre configured with the lsoie test set, but you can change that the a txt file of any sentences you would like. To predict run:
+
+``` python large_scale_oie/evaluation/predict_conll.py --in results/srl_bert_no_science/ --out large_scale_oie/evaluation/srl_bert_noscience.conll```
+
+where results are the checkpoints of your trained model. It will by default take `best.th`. 
+
+## Performing Evaluation
+
+The evaluation script here corrects the original `Supervised Open Information Extraction` in that it does not invert confidence estimates and looks for the syntactic head match from the gold extraction argument, rather than lexical overlap, which has many downfalls. 
+
+To use the evaluation script after prediction, you must first convert to tabbed extractions using the following command:
+
+```python large_scale_oie/evaluation/trained_oie_extractor.py --in large_scale_oie/evaluation/ls_long_sort_orig_qdist_old_model_crf_on_science.conll --out large_scale_oie/evaluation/ls_long_sort_orig_qdist_old_model_crf_on_science.txt```
+
+This will take the predictions made by the extractor and transform them into confidences that can be thresholded during eval. 
+
+Now you move to the folder, `oie_benchmark` and you have a couple of options for a test set:
+
+* `eval.oie` new eval for LSOIE
+* `test.oie.orig` old eval for rnnoie
+
+Running the evaluation command
+
+```python3 benchmark.py --gold=./oie_corpus/eval.oie --out=eval/srl_bert_oie2016.dat --tabbed=./systems_output/ls_long_sort_orig_qdist_old_model_new_eval.txt```
+
+And example evaluation series is in the file
+
+```oie_benchmark/paper_eval.sh```
+
+## Please Stay in Touch
+
+If you have encountered this work and you are interested in building upon it, please reach out! Many pieces shifted during the research process and I can certainly be a resource for you as you discover the contents herein. 
 
 
