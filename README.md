@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this repository, you will find the data published in the paper `Scaling Up Supervised Information Extraction`, along with the training procedures necessary to train your open information extractor from these data, and finally, you will find evaluation techniques for evaluating your open information extractor.
+In this repository, you will find the data published in the paper `LSOIE: A Large-Scale Dataset for Supervised Open Information Extraction`, along with the training procedures necessary to train your open information extractor from these data, and finally, you will find evaluation techniques for evaluating your open information extractor.
 
 ## Dataset Creation
 
