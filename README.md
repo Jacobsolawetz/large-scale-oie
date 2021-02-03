@@ -1,8 +1,8 @@
-# Welcome to Scaling up Supervised Open Information Extraction
+# Welcome to LSOIE: A Large-Scale Dataset for Supervised Open Information Extraction
 
 ## Introduction
 
-In this repository, you will find the data published in the paper `Scaling Up Supervised Information Extraction`, along with the training procedures necessary to train your open information extractor from these data, and finally, you will find evaluation techniques for evaluating your open information extractor.
+In this repository, you will find the data published in the paper [LSOIE: A Large-Scale Dataset for Supervised Open Information Extraction](https://arxiv.org/pdf/2101.11177.pdf) (EACL 2021), along with the training procedures necessary to train your open information extractor from these data, and finally, you will find evaluation techniques for evaluating your open information extractor.
 
 ## Dataset Creation
 
@@ -79,5 +79,19 @@ And example evaluation series to create eval plots is in the file
 ## Please Stay in Touch
 
 If you have encountered this work and you are interested in building upon it, please reach out! Many pieces shifted during the research process and I can certainly be a resource for you as you discover the contents herein. 
+
+## Citation
+
+If you find the LSOIE paper or dataset useful, please cite:
+
+```
+@article{lsoie-2021,
+  title={{LSOIE}: A Large-Scale Dataset for Supervised Open Information Extraction},
+  author={{Solawetz}, Jacob and {Larson}, Stefan},
+  journal={arXiv preprint arXiv:2101.11177},
+  year={2019},
+  url="https://arxiv.org/pdf/2101.11177.pdf"
+}
+```
 
 
