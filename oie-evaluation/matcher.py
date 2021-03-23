@@ -37,25 +37,25 @@ class Matcher:
         if ignoreCase:
             s1 = s1.lower()
             s2 = s2.lower()
-        
+
         s1Words = s1.split(' ')
         s2Words = s2.split(' ')
-        
+
         if ignoreStopwords:
             s1Words = Matcher.removeStopwords(s1Words)
             s2Words = Matcher.removeStopwords(s2Words)
-            
+
         return sorted(s1Words) == sorted(s2Words)
-    
+
     @staticmethod
     def bleuMatch(ref, ex, ignoreStopwords, ignoreCase):
         sRef = ref.bow()
         sEx = ex.bow()
         bleu = sentence_bleu(references = [sRef.split(' ')], hypothesis = sEx.split(' '))
         return bleu > Matcher.BLEU_THRESHOLD
-    
+
     @staticmethod
-    def lexicalMatch(sentence, ref, ex, ignoreStopwords, ignoreCase):
+    def syntacticHeadMatch(sentence, ref, ex, ignoreStopwords, ignoreCase):
         #working on arg syntactic head match
         #first make sure extractions agree on the predicate
         ###print(ref.args)
@@ -80,7 +80,7 @@ class Matcher:
             #different number of arguments extracted
             return False
         for i, head in enumerate(heads):
-            
+
             #sometimes '.' is identified as the syntactic head and we do not want to count
             #these extractions as incorrect
             if head == '.':
@@ -107,25 +107,20 @@ class Matcher:
             #for w2 in sEx:
                 #if w1 == w2:
                     #count += 1
-                    
+
         # We check how well does the extraction lexically cover the reference
         # Note: this is somewhat lenient as it doesn't penalize the extraction for
         #       being too long
         #coverage = float(count) / len(sRef)
 
-        
+
         return True#coverage > Matcher.LEXICAL_THRESHOLD
-    
+
     @staticmethod
     def removeStopwords(ls):
         return [w for w in ls if w.lower() not in Matcher.stopwords]
-    
+
     # CONSTANTS
     BLEU_THRESHOLD = 0.4
     LEXICAL_THRESHOLD = 0.5 # Note: changing this value didn't change the ordering of the tested systems
     stopwords = stopwords.words('english') + list(string.punctuation)
-
-
-
-
-
